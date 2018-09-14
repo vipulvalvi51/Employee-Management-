@@ -26,7 +26,7 @@ public class Login extends HttpServlet
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		HttpSession session = request.getSession();
-		
+		System.out.println("");
 		Admin admin=new Admin();
 		admin.setEmail(email);
 		admin.setPassword(password);
